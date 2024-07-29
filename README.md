@@ -5,8 +5,17 @@ Here is a README file for your Moment Cap application:
 # 📸 Moment Cap
 
 Moment Cap is a powerful and intuitive camera app built with Kotlin, designed to capture and manage your precious moments effortlessly. Utilizing MVVM architecture and Room DB, Moment Cap ensures your photos and albums are organized and easily accessible.
+## 📸 Screenshots
+![image](https://github.com/user-attachments/assets/d52ae2c7-960f-4144-bde7-ed286e3b6e76)
+![image](https://github.com/user-attachments/assets/b896d9ae-8a04-4f63-b8fc-b4633795645f)
+![image](https://github.com/user-attachments/assets/91e71991-82a4-4007-b2b7-dc0b22e9f294)
+![image](https://github.com/user-attachments/assets/af2e5837-2c15-47d0-a48a-7ccc9640d824)
+![image](https://github.com/user-attachments/assets/4b817dfa-663c-4afe-8927-27ec33e11c63)
+![image](https://github.com/user-attachments/assets/a4504567-4a26-4a49-bdaa-f849c2e59281)
+![image](https://github.com/user-attachments/assets/e1ddd4b9-94f6-4a74-bff0-9b03e1d6d1bb)
+![image](https://github.com/user-attachments/assets/66e218e3-b17d-4d5a-92ca-dc58ffd76c73)
+![image](https://github.com/user-attachments/assets/aa9ec6f2-de3e-4c39-ab93-262b5d303d67)
 
-![Moment Cap](link-to-your-app-image)
 
 ## 📱 Features
 
@@ -47,12 +56,6 @@ Moment Cap is a powerful and intuitive camera app built with Kotlin, designed to
     - Click on `File > Open` and select the `moment-cap` project.
     - Click `Run` or `Shift + F10` to build and run the app on an emulator or a physical device.
 
-## 📸 Screenshots
-
-![Splash Screen](link-to-your-splash-screen-image)
-![Home Screen](link-to-your-home-screen-image)
-![Camera Screen](link-to-your-camera-screen-image)
-![Album Screen](link-to-your-album-screen-image)
 
 ## 🧑‍💻 Contribution
 
