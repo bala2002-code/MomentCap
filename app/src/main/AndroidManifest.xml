@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="info.rashadtanjim.interactivephotogallery">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:extractNativeLibs="true"
+        android:icon="@drawable/ic_gallery"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_gallery"
+        android:theme="@style/Theme.InteractivePhotoGallery">
+
+        <activity
+            android:name=".ui.gallery.GalleryActivity"
+            android:exported="true"
+            android:theme="@style/Theme.InteractivePhotoGallery">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https"/>
+                <data android:host="rashadtanjim.info"/>
+                <data android:scheme="https"/>
+                <data android:host="rashadtanjim.info"/>
+                <data android:pathPrefix="/picsum"/>
+                <data android:scheme="https"/>
+                <data android:host="www.rashadtanjim.info"/>
+                <data android:pathPrefix="/picsum"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Add FileProvider configuration -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="info.rashadtanjim.interactivephotogallery.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>
